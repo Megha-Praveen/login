@@ -1,0 +1,167 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NextLearn Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+
+    <div class="d-flex">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar p-3">
+        <h4 class="text-white">NextLearn</h4>
+        <ul class="nav flex-column mt-4">
+          <li class="nav-item"><a href="#home" class="nav-link active">🏠 Dashboard</a></li>
+          <li class="nav-item"><a href="#course" class="nav-link">📚 My Courses</a></li>
+          <li class="nav-item"><a href="#wishlist" class="nav-link">❤️ Wishlist</a></li>
+          <li class="nav-item"><a href="#instructor" class="nav-link">⚙️ Instructors</a></li>
+          <li class="nav-item"><a href="/logout" class="nav-link text-danger">🚪
+              Logout</a></li>
+        </ul>
+      </div>
+
+      <!-- MAIN -->
+      <div class="main-content flex-grow-1">
+
+        <!-- NAVBAR -->
+        <nav class="navbar bg-white shadow-sm px-4">
+          <div class="ms-auto d-flex align-items-center">
+            <span class="me-3">Hi, {{username}} 👋</span>
+            <img src="/pro1.jpg" class="rounded-circle" />
+          </div>
+        </nav>
+
+        <div class="container py-4" id="home">
+
+          <!-- WELCOME -->
+          <div class="welcome-card p-4 mb-4">
+            <h3>Welcome back, {{username}} 🌿</h3>
+            <p>Continue your learning journey and explore new skills</p>
+          </div>
+
+          <!-- STATS -->
+          <div class="row text-center mb-4">
+            <div class="col-md-3"><div class="stat-card"><h4>5</h4><p
+                >Courses</p></div></div>
+            <div class="col-md-3"><div class="stat-card"><h4>2</h4><p
+                >Completed</p></div></div>
+            <div class="col-md-3"><div class="stat-card"><h4>12h</h4><p
+                >Learning</p></div></div>
+            <div class="col-md-3"><div class="stat-card"><h4>3</h4><p
+                >Certificates</p></div></div>
+          </div>
+
+          <!-- CONTINUE -->
+          <h5>Continue Learning</h5>
+          <div class="row mb-4" id="course">
+            <div class="col-md-4">
+              <div class="course-card">
+                <h6>MERN Stack</h6>
+                <div class="progress mt-2">
+                  <div class="progress-bar bg-success" style="width:60%"></div>
+                </div>
+                <small>60% completed</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card">
+                <h6>Cyber Security</h6>
+                <div class="progress mt-2">
+                  <div class="progress-bar bg-success" style="width:30%"></div>
+                </div>
+                <small>30% completed</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- RECOMMENDED -->
+          <h5>Recommended</h5>
+          <div class="row mb-4">
+
+            <div class="col-md-3">
+              <div class="course-card">
+                <img src="/img1.png" />
+                <h6 class="mt-2">UI/UX Design</h6>
+                <p class="rating">⭐ 4.7</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="course-card">
+                <img src="/img2.png" />
+                <h6 class="mt-2">Python</h6>
+                <p class="rating">⭐ 4.6</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="course-card">
+                <img src="/img3.webp" />
+                <h6 class="mt-2">React</h6>
+                <p class="rating">⭐ 4.8</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="course-card">
+                <img src="/img4.jpg" />
+                <h6 class="mt-2">Data Science</h6>
+                <p class="rating">⭐ 4.5</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RECENT -->
+          <h5>Recently Added</h5>
+          <div class="row mb-4" id="wishlist">
+            <div class="col-md-3">
+              <div class="course-card">
+                <img src="/img5.webp" />
+                <h6>Node.js</h6>
+                <p>New 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- INSTRUCTORS -->
+          <h5>Top Instructors</h5>
+          <div class="row mb-4" id="instructor">
+            <div class="col-md-3">
+              <div class="instructor-card text-center">
+                <img
+                  src="/pro2.jpg"
+                  class="rounded-circle mb-2 instimage"
+                />
+                <h6>John Doe</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEADLINE -->
+          <h5>Deadlines</h5>
+          <div class="deadline-card p-3 mb-4">
+            Complete React Module (2 days left)
+          </div>
+
+          <!-- CTA -->
+          <div class="cta-card text-center p-4">
+            <h5>Explore More Courses 🚀</h5>
+            <button class="btn btn-light mt-2">Browse</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

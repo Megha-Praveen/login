@@ -1,0 +1,48 @@
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- left -->
+        <div class="col-md-6 left-side">
+          <h1>Welcome To NextLearn</h1>
+          <p>Login to continue your learning journey</p>
+        </div>
+
+        <!-- right -->
+        <div class="col-md-6 login-container">
+          <div class="login-card">
+
+            <h2 class="text-center mb-4">Login</h2>
+            {{#if msg}}
+              <h5 class="text-danger text-center mb-3">{{msg}}</h5>
+            {{/if}}
+            <form action="/verify" method="post">
+              <div class="mb-3 form-group">
+                <input type="text" name="username" class="form-control" placeholder=" " required>
+                <label>Username or Email</label>
+              </div>
+
+              <div class="mb-3 form-group">
+                <input type="password" name="password" class="form-control" id="password" placeholder=" " required>
+                <label>Password</label>
+              </div>
+
+              <button class="btn btn-custom w-100" type="submit">Login</button>
+
+              <p class="text-center mt-3">
+                <a href="#">Forgot password?</a>
+              </p>
+
+              <p class="text-center">
+                Don't have an account?
+                <a href="#">Register</a>
+              </p>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   
